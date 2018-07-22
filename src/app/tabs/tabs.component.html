@@ -1,0 +1,53 @@
+<ul class="tabs_list">
+  <li *ngFor="let item of items"><a href="#" (click)="onClick(item)">{{item}}</a></li>
+</ul>
+
+<div class="tab-conteiner" [ngSwitch]="current">
+  <span *ngSwitchDefault>Tab 1</span>
+  <span *ngSwitchCase="'Tab 2'">Tab 2</span>
+  <span *ngSwitchCase="'Tab 3'">Tab 3</span>
+  <span *ngSwitchCase="'Tab 4'">Tab 4</span>
+  <span *ngSwitchCase="'Tab 5'">Tab 5</span>
+  <span *ngSwitchCase="'Tab 6'">Tab 6</span>
+</div>
+
+
+<div class="my_tabs-wrapper">
+  <div id="tabs">
+    <ul class="tabs__navigation">
+      <li class="tabs__item" *ngFor="let title of titles" (click)="onClickTitles(title)"><a href="#">{{title.name}}</a></li>
+    </ul>
+    <div class="tabs__container" [ngSwitch]="titleId">
+      <div class="tab1" *ngSwitchDefault>
+        <p class="tabs-text">
+        111 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vero in ad aspernatur
+        necessitatibus laboriosam obcaecati sit ea, accusamus est magni saepe dignissimos sunt vel
+        facilis placeat, sed ab voluptatum.</p>
+      </div>
+      <div class="tab2" *ngSwitchCase="2">
+        <p class="tabs-text">
+        222 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vero in ad aspernatur
+        necessitatibus laboriosam obcaecati sit ea, accusamus est magni saepe dignissimos sunt vel
+        facilis placeat, sed ab voluptatum.</p>
+      </div>
+      <div class="tab3" *ngSwitchCase="3">
+        <p class="tabs-text">
+        333 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vero in ad aspernatur
+        necessitatibus laboriosam obcaecati sit ea, accusamus est magni saepe dignissimos sunt vel
+        facilis placeat, sed ab voluptatum.</p>
+      </div>
+      <div class="tab4" *ngSwitchCase="4">
+        <p class="tabs-text">
+        444 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vero in ad aspernatur
+        necessitatibus laboriosam obcaecati sit ea, accusamus est magni saepe dignissimos sunt vel
+        facilis placeat, sed ab voluptatum.</p>
+      </div>
+      <div class="tab5" *ngSwitchCase="5">
+        <p class="tabs-text">
+        555 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vero in ad aspernatur
+        necessitatibus laboriosam obcaecati sit ea, accusamus est magni saepe dignissimos sunt vel
+        facilis placeat, sed ab voluptatum.</p>
+      </div>
+    </div>
+  </div>
+</div>

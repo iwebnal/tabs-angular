@@ -1,0 +1,112 @@
+.my_tabs-wrapper{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.tabs_list {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 3%;
+    font-size: 0px;
+    text-align: center;
+}
+
+.tabs_list li {
+    display: inline-block;
+    border-top: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+}
+
+.tabs_list li:first-child {
+    display: inline-block;
+    border-left: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+}
+
+.tabs_list li a {
+    display: inline-block;
+    padding: 10px 45px;
+    font-size: 16px;
+    font-weight: 900;
+    color: black;
+    background: transparent;
+    text-decoration: none;
+}
+
+.tabs_list li a:hover {
+    background: #cccccc;
+    color: #ffffff;
+    transition: background 0.5s ease;
+}
+
+.tabs_list li a:focus {
+    background: #cccccc;
+    color: #ffffff;
+    transition: background 0.5s ease;
+}
+
+.tab-conteiner {
+    max-width: 775px;
+    background: #cccccc;
+    min-height: 350px;
+    margin: 0 auto;
+    padding: 15px 15px;
+    box-sizing: border-box;
+}
+
+/* ****************************** product-mainbox__tabs ****************************** */
+
+.tabs__container {
+    padding: 15px 0px 20px 0px;
+}
+
+@media only screen and (min-width: 480px) {
+    .tabs__container {
+        padding: 40px 0px 40px 0px;
+    }
+}
+
+.tabs-text {
+    display: block;
+    font-size: 14px;
+    color: #448abb;
+}
+
+.tabs__item {
+    display: inline-block;
+}
+
+.tabs__item a{
+    display: inline-block;
+    height: unset;
+    padding: 10px 15px;
+    font-family: "Lato-Bold";
+    font-size: 14px;
+    color: #263238;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+
+    border-top: 1px solid #CFD8DC;
+    border-right: 1px solid #CFD8DC;
+    border-bottom: 1px solid #0097A7;
+    border-left: 1px solid #CFD8DC;
+}
+
+.tabs__item a:focus{
+    border-top: 1px solid #0097A7;
+    border-right: 1px solid #0097A7;
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid #0097A7;
+}
+
+.tabs__navigation {
+    width: 100%;
+    font-size: 0;
+}
